@@ -1,0 +1,110 @@
+/* Global body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the authentication sections */
+.auth-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for the container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section styles for Register and Login */
+.auth-section {
+    margin-bottom: 30px;
+}
+
+/* Title styles */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Form group styles for better spacing */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input field styles */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect on inputs */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button styles */
+.auth-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.auth-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Button active effect */
+.auth-button:active {
+    background-color: #004080;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .auth-container {
+        padding: 20px;
+    }
+
+    .auth-button {
+        padding: 10px 20px;
+    }
+}

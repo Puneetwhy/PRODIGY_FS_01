@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <!-- Register Section -->
+    <section class="auth-section" id="register-section">
+        <h1>Register</h1>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="reg-username">Username</label>
+                <input type="text" id="reg-username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="auth-button">Register</button>
+        </form>
+    </section>
+
+    <!-- Login Section -->
+    <section class="auth-section" id="login-section">
+        <h1>Login</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="auth-button">Login</button>
+        </form>
+    </section>
+</div>
+
+<script src="/static/index.js"></script>
+
+</body>
+</html>
